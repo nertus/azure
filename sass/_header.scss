@@ -1,0 +1,42 @@
+.page-header{
+  height: 100px;
+  background: $body-bg;
+  @include font('Verlag-Light');
+  .row{
+    padding-top: 30px;
+  }
+  .left-column{
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 2rem;
+    @include media-breakpoint-down(sm){
+      font-size: .7rem;
+    }
+  }
+  .right-column{
+    text-align: right;
+    line-height: 2rem;
+    a{
+      color: $gray-dark;
+      font-size: 1.5rem;
+      @include media-breakpoint-down(sm){
+        font-size: 1rem;
+      }
+    }
+  }
+  .center-column{
+    .logo{
+      margin: 0 auto;
+      display: block;
+      height: 33px;
+      width: 148px;
+      background: url('../images/azure_logo.png') 0 0 no-repeat;
+      background-size: contain;
+      text-indent: -9000em;
+
+      @include media-breakpoint-down(md){
+        margin-bottom: $sales_shadow_width;
+      }
+    }
+  }
+}

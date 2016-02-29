@@ -1,0 +1,15 @@
+.page-footer {
+  height: 80px;
+  font-size: .75rem;
+  padding-top: 30px;
+  @include font('Verlag-Light');
+  .left-column {
+    text-align: left;
+  }
+  .right-column {
+    text-align: right;
+    @include media-breakpoint-only(xs){
+      text-align: center;
+    }
+  }
+}
